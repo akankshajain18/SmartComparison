@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:orientation="horizontal"
+    android:background="@drawable/border"
+    android:paddingStart="@dimen/feed_item_margin"
+    android:paddingEnd="@dimen/feed_item_margin"
+    android:paddingBottom="@dimen/feed_item_padding_top_bottom"
+    android:paddingTop="@dimen/feed_item_padding_top_bottom">
+
+
+
+
+    <ImageView
+        android:id="@+id/iv_Pic"
+        android:layout_width="@dimen/feed_item_pic"
+        android:layout_height="@dimen/feed_item_pic"
+        android:src="@drawable/noimg"
+        android:scaleType="fitXY"
+        android:orientation="horizontal"
+        android:layout_marginStart="@dimen/feed_item_margin"
+        android:layout_marginTop="@dimen/feed_item_margin"
+        android:layout_marginEnd="@dimen/feed_item_padding_start_end"
+        android:background="@drawable/border">
+
+    </ImageView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/feed_item_margin"
+            android:layout_marginTop="@dimen/feed_item_margin"
+            android:layout_marginEnd="@dimen/feed_item_padding_start_end"
+            android:textColor="@color/black"
+            android:layout_alignBaseline="@+id/btn_buy"
+            android:layout_alignParentStart="true"
+            android:textAppearance="?android:attr/textAppearanceSearchResultTitle"
+            android:gravity="center_vertical"/>
+
+
+        <Button
+            android:id="@+id/btn_buy"
+            android:background="@drawable/rounded_rect"
+            android:text="buy"
+            android:focusable="false"
+            android:paddingStart="@dimen/feed_item_margin"
+            android:layout_marginTop="@dimen/feed_item_margin"
+            android:layout_marginEnd="@dimen/feed_item_padding_start_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_toEndOf="@id/tv_price"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
